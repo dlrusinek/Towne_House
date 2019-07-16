@@ -1,0 +1,270 @@
+/*---Body--*/
+body{
+    overflow-x: hidden;
+}
+
+
+/*---Navbar--*/
+
+.navbar{
+    opacity: 0.8;
+}
+
+
+li>a{
+    text-transform: uppercase;
+    font-weight:bold;
+    color: white;
+    margin-right: 4rem;
+}
+
+
+
+
+/*---Carousel---*/
+
+.carousel-item{
+    height: 100vh;
+}
+
+.carousel-caption{
+    position: absolute;
+    width: 100%;
+    top: 38%;
+    left: 0;
+    right: 0;
+}
+.carousel-caption h1{
+    font-size: 6rem;
+    text-shadow: 0.1rem 0.1rem 0.8rem black;  
+    margin-bottom: 1.2rem;
+    width: 100%;
+}
+
+.carousel-caption h3{
+    text-shadow: 0.2rem 0.2rem 0.8rem black;
+    margin-bottom: 1rem;
+}
+
+#carousel-button{
+    border-width: medium;
+}
+
+#carousel-button>a{
+    text-decoration: none;
+    color: white;
+
+}
+
+#carousel-button:hover{
+    background-color: black;
+
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    z-index: 2;
+    bottom: 30%;
+}
+
+.carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/*---Banner--*/
+
+#banner{
+    height: 10vh;
+    width: 100%;
+    background-color: red;
+    opacity: 0.5;
+    z-index: 3;
+    transform: translateY(-150%);
+}
+
+#banner2{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+    transform: translateY(-250%);
+}
+
+#banner2 h1{
+    color: white;
+}
+/*---About Section--*/
+#about{
+    margin-top: -20vh;
+    height: 80%;
+    width: 100%;
+    /*
+    background-image: url(about/backdrop.jpg);
+    background-size: 100%;
+    */
+    background-color: beige;
+}
+
+.container-fluid h1{
+    color: black;
+    text-transform: uppercase;
+}
+
+.container-fluid .underline{
+    height: .2rem;
+    width: 3rem;
+    background-color: green;
+    margin: 1rem auto 1rem;
+}
+
+.container-fluid .about-caption{
+    background-color: black;
+    opacity: 0.6;
+    height:55%;
+    width: 95%;
+    z-index: 3;
+    margin: 0 auto 1rem;
+    color: white;
+    font-size: 20px;
+    padding: 3rem;
+}
+
+.about-caption p{
+    text-align: left;
+}
+
+/*---Home Gallery--*/
+
+#home-gallery img{
+    width: 100%;
+}
+
+#home-gallery{
+    background-color: beige;
+}
+
+/*--- Contact --*/
+
+#contact{
+    height:50%;
+    background-color: #40474e;
+    width: 100%;
+    color: white;
+}
+/*
+.vertical-rule{
+    height: 20px;
+    width: 5px;
+    background-color: black;
+    color: black;
+}
+*/
+#contact hr{
+    background-color: darkgray;
+}
+
+#contact h1{
+    color: white;
+}
+
+.contact-info{
+    margin: 20% 0 20%;
+}
+
+.contact-info img{
+    margin: 5%;
+}
+
+.contact-form{
+    margin: 20% 0 20%;
+}
+
+.contact-form #button{
+    margin: 0 auto 0;
+}
+
+.form-group{
+    text-align: left;
+}
+
+.contact-form .btn-lg{
+    width: 100%;
+}
+/*---Footer--*/
+
+#footer{
+    background-color: #40474e;
+    width: 100%;
+    height: 10vh;
+    color: white;
+    margin-top: -5vh;
+    font-size: 24px;
+}
+
+
+
+#footer hr{
+    background-color: lightgray;
+    color: lightgray;
+}
+
+
+
+
+
+
+/*---Media Queries--*/
+@media (max-width: 767px){
+    .carousel-caption h1{
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+    .carousel-caption h3{
+        font-size: 2rem;
+    }
+
+    #contact .vertical-rule{
+        display: none;
+    }
+}
+
+@media (max-width: 874px){
+    #banner{
+        display: none;
+    }
+    #banner2{
+        display:none;
+    }
+    #about{
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 576){
+    .container-fluid .story{
+        font-size: 12px;
+    }
+}
+
+/*
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
